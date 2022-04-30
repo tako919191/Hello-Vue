@@ -6,7 +6,6 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn outlined to="/enterprise">For Enterprise</v-btn>
       <v-menu offset-y>
         <template v-slot:activator="{on}">
         <v-btn v-on="on" outlined>Select<v-icon>mdi-menu-down</v-icon></v-btn>
@@ -60,48 +59,16 @@
 </template>
 
 <script>
+import constants from '../common/constants'
+
 export default {
   name: 'AppHeader',
 
   data () {
     return {
       drawer: null,
-      supports: [
-        { name: 'Consulting and suppourt', icon: 'mdi-vuetify' },
-        { name: 'Discord community', icon: 'mdi-discord' },
-        { name: 'Report a bug', icon: 'mdi-bug' },
-        { name: 'Github issue board', icon: 'mdi-github' },
-        { name: 'Stack overview', icon: 'mdi-stack-overflow' }
-      ],
-      nav_lists: [
-        {
-          name: 'Getting Started',
-          icon: 'mdi-speedometer',
-          lists: ['Quick Start', 'Pre-made layouts']
-        },
-        {
-          name: 'Customization',
-          icon: 'mdi-cogs'
-        },
-        {
-          name: 'Styles & animations',
-          icon: 'mdi-palette',
-          lists: ['Colors', 'Content', 'Display']
-        },
-        {
-          name: 'UI Components',
-          icon: 'mdi-view-dashboard',
-          lists: ['API explorer', 'Alerts']
-        },
-        {
-          name: 'Directives',
-          icon: 'mdi-function'
-        },
-        {
-          name: 'Preminum themes',
-          icon: 'mdi-vuetify'
-        }
-      ]
+      supports: constants.supports,
+      nav_lists: constants.nav_lists,
     }
   }
 }
