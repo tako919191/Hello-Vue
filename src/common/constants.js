@@ -1,5 +1,5 @@
 export default {
-    supports: [{ name: 'Consulting and suppourt', icon: 'mdi-vuetify' }],
+    supports: [{ name: 'Test', icon: 'mdi-vuetify' }],
     nav_lists: [
         {
             name: 'Getting Started',

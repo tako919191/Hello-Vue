@@ -1,6 +1,6 @@
 <template>
   <header>
-    <v-app-bar dark app clipped-left>
+    <v-app-bar app clipped-left>
       <v-app-bar-nav-icon @click="drawer=!drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>Vuetify</v-toolbar-title>
 
